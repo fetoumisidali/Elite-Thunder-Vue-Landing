@@ -25,7 +25,6 @@ const updatePosition = () => {
       y: rect.top + rect.height / 2
     };
 
-    console.log(controllerPos.value)
   }
 };
 onMounted(() => {
