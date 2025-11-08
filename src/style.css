@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  --electric-yellow: #FFD700;
+  --electric-orange: #FFA500;
+  --dark-gray: #1a1a1a;
+  --deep-black: #0f0f0f;
+  background-color: var(--deep-black);
+}
