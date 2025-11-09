@@ -35,7 +35,7 @@ onUnmounted(() => {
                     Pre-Order
                 </a>
             </nav>
-            <button @click="" class="md:hidden text-(--electric-yellow)">
+            <button aria-label="Button to toggle Mobile Menu" @click="" class="md:hidden text-(--electric-yellow)">
                 <Menu :size="24" />
             </button>
         </div>
