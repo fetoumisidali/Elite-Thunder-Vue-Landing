@@ -47,7 +47,7 @@
         <component :is="icon" :size="28" :stroke-width="1.5" />
       </div>
 
-      <h3
+      <h2
         :class="[
           'text-xl font-bold mb-3 transition-colors',
           'text-white',
@@ -55,7 +55,7 @@
         ]"
       >
         {{ title }}
-      </h3>
+      </h2>
 
       <p class="text-gray-400 leading-relaxed">
         {{ description }}
