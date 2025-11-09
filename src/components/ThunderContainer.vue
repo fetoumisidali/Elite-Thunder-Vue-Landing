@@ -19,9 +19,9 @@
     <div
       :class="[
         'p-8 transition-all duration-300 group-hover:-translate-y-2 overflow-hidden relative',
-        'bg-gradient-to-br from-[#1a1a1a] to-[#151515]',
+        'bg-linear-to-br from-[#1a1a1a] to-[#151515]',
         'border border-white/5',
-        'hover:border-[var(--color-1)]/50', // JIT-safe
+        'hover:border-(var(--color-1))/50', // JIT-safe
         'mx-4 my-4'
       ]"
     >
@@ -29,7 +29,7 @@
         :class="[
           'absolute -inset-px blur-xl transition-opacity duration-500 -z-10',
           'opacity-0 group-hover:opacity-100',
-          'bg-gradient-to-br from-[var(--color-1)]/20 to-transparent' // JIT-safe
+          'bg-linear-to-br from-(var(--color-1))/20 to-transparent' // JIT-safe
         ]"
       ></div>
 
@@ -38,9 +38,9 @@
           'w-14 h-14 rounded-sm flex items-center justify-center mb-6',
           'transition-all duration-300',
           'group-hover:scale-110',
-          'bg-[var(--color-1)]/10',     // JIT-safe
-          'text-[var(--color-1)]',      // JIT-safe
-          'group-hover:bg-[var(--color-1)]', // JIT-safe
+          'bg-(var(--color-1))/10',     // JIT-safe
+          'text-(var(--color-1))',      // JIT-safe
+          'group-hover:bg-(var(--color-1))', // JIT-safe
           'group-hover:text-black'
         ]"
       >
@@ -51,7 +51,7 @@
         :class="[
           'text-xl font-bold mb-3 transition-colors',
           'text-white',
-          'group-hover:text-[var(--color-1)]' // JIT-safe
+          'group-hover:text-(var(--color-1))' // JIT-safe
         ]"
       >
         {{ title }}
