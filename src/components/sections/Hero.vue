@@ -63,6 +63,7 @@ onUnmounted(() => {
           <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-none text-white">
             DOMINATE
             <span
+              style="filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8)) drop-shadow(0 0 12px rgba(255, 215, 0, 0.5)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3))"
               class="block text-transparent bg-clip-text bg-linear-to-r from-(--electric-yellow) to-(--electric-orange)">
               EVERY GAME
             </span>
@@ -71,11 +72,13 @@ onUnmounted(() => {
             Experience unparalleled precision and control with the Elite Thunder. Engineered for champions, designed for
             victory.
           </p>
-          <div class="flex flex-wrap gap-4"> 
-            <button class="bg-linear-to-b from-(--electric-yellow) to-(--electric-orange) text-xl  text-(--deep-black) px-12 py-3 rounded-lg font-semibold">
+          <div class="flex flex-wrap gap-4">
+            <button
+              class="bg-linear-to-b from-(--electric-yellow) to-(--electric-orange) text-xl  text-(--deep-black) px-12 py-3 rounded-lg font-semibold">
               Get Started
             </button>
-            <button class="bg-transparent border-2 border-white  text-xl text-white px-12 py-3 hover:bg-white hover:text-(--deep-black) font-semibold rounded-lg transition-all">
+            <button
+              class="bg-transparent border-2 border-white  text-xl text-white px-12 py-3 hover:bg-white hover:text-(--deep-black) font-semibold rounded-lg transition-all">
               Explore Features
             </button>
           </div>
@@ -84,7 +87,7 @@ onUnmounted(() => {
       <div class="relative order-1 lg:order-2">
         <div class="relative" ref="controllerContainer">
           <img src="../../assets/controller.png"
-            class="animate-float z-20 relative w-full h-auto max-w-xl object-contain transform hover:scale-105 transition-transform duration-500"
+            class="animate-float animate-thunderPulse z-20 relative w-full h-auto max-w-xl object-contain transform hover:scale-105 transition-transform duration-500"
             style="filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.4)) drop-shadow(0 0 40px rgba(251, 191, 36, 0.2))">
         </div>
       </div>
@@ -101,6 +104,22 @@ onUnmounted(() => {
 
   50% {
     opacity: 1;
+  }
+}
+
+@keyframes thunderPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.6)) 
+            drop-shadow(0 0 8px rgba(255, 215, 0, 0.4));
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+
+  50% {
+    filter: 
+            drop-shadow(0 0 10px #FFD700) 
+            drop-shadow(0 0 10px #FFD700);
+    transform: translateY(-15px) rotate(-4deg) scale(1.05);
+    
   }
 }
 
@@ -136,6 +155,10 @@ onUnmounted(() => {
 
 .animate-float {
   animation: float 4s ease-in-out infinite;
+}
+
+.animate-thunderPulse {
+  animation: thunderPulse 3s ease-in-out infinite
 }
 
 .animate-energy-pulse {
