@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Zap } from 'lucide-vue-next';
-import ThunderBolt from './ThunderBolt.vue';
+import ThunderBolt from '../ThunderBolt.vue';
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const controllerContainer = ref<HTMLElement>()
@@ -85,7 +85,7 @@ onUnmounted(() => {
         </div>
       </div>
       <div class="relative order-1 lg:order-2">
-        <div class="relative" >
+        <div class="relative">
           <img ref="controllerContainer" src="../../assets/controller.png"
             class="animate-float animate-thunderPulse z-20 relative w-full h-auto max-w-xl object-contain transform hover:scale-105 transition-transform duration-500"
             style="filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.4)) drop-shadow(0 0 40px rgba(251, 191, 36, 0.2))">
@@ -94,74 +94,3 @@ onUnmounted(() => {
     </div>
   </section>
 </template>
-<style scoped>
-@keyframes pulse-glow {
-
-  0%,
-  100% {
-    opacity: 0.4;
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes thunderPulse {
-  0%, 100% {
-    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.6)) 
-            drop-shadow(0 0 8px rgba(255, 215, 0, 0.4));
-    transform: translateY(0px) rotate(0deg) scale(1);
-  }
-
-  50% {
-    filter: 
-            drop-shadow(0 0 10px #FFD700) 
-            drop-shadow(0 0 10px #FFD700);
-    transform: translateY(-15px) rotate(-4deg) scale(1.05);
-    
-  }
-}
-
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-15px) rotate(-4deg);
-  }
-}
-
-@keyframes energy-pulse {
-
-  0%,
-  100% {
-    box-shadow: 0 0 20px rgba(251, 191, 36, 0.3),
-      0 0 40px rgba(251, 191, 36, 0.2);
-  }
-
-  50% {
-    box-shadow: 0 0 40px rgba(251, 191, 36, 0.6),
-      0 0 80px rgba(251, 191, 36, 0.4);
-  }
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
-}
-
-.animate-float {
-  animation: float 4s ease-in-out infinite;
-}
-
-.animate-thunderPulse {
-  animation: thunderPulse 3s ease-in-out infinite
-}
-
-.animate-energy-pulse {
-  animation: energy-pulse 2s ease-in-out infinite;
-}
-</style>
