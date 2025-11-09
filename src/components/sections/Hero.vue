@@ -72,10 +72,10 @@ onUnmounted(() => {
             victory.
           </p>
           <div class="flex flex-wrap gap-4"> 
-            <button class="bg-(--electric-yellow) text-xl text-white px-12 py-3 rounded-lg">
+            <button class="bg-linear-to-b from-(--electric-yellow) to-(--electric-orange) text-xl  text-(--deep-black) px-12 py-3 rounded-lg font-semibold">
               Get Started
             </button>
-            <button class="bg-white text-xl text-black px-12 py-3 rounded-lg">
+            <button class="bg-transparent border-2 border-white  text-xl text-white px-12 py-3 hover:bg-white hover:text-(--deep-black) font-semibold rounded-lg transition-all">
               Explore Features
             </button>
           </div>
