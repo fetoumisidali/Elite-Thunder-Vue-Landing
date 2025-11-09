@@ -22,8 +22,11 @@ onUnmounted(() => {
 <template>
     <header class="fixed top-0 left-0 z-50 right-0 px-4" :class="{ 'bg-black/70 backdrop-blur-md ' : isScrolled}">
         <div class="max-w-7xl mx-auto h-16 flex items-center justify-between">
-            <h1 class="text-xl md:text-2xl font-bold text-white uppercase tracking-tighter">Elite <span
+            <div class="flex items-center">
+                <img src="/controller-vector-no-bg.png" class="h-16 w-auto" alt="Logo">
+                <h1 class="text-xl md:text-2xl font-bold text-white uppercase tracking-tighter">Elite <span
                     class="text-(--electric-yellow)">Thunder</span></h1>
+            </div>
             <nav class="hidden md:flex items-center gap-6">
                 <NavLink title="Features" />
                 <NavLink title="Specs" />
