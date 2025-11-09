@@ -86,7 +86,7 @@ onUnmounted(() => {
       </div>
       <div class="relative order-1 lg:order-2">
         <div class="relative">
-          <img ref="controllerContainer" src="../../assets/controller.png"
+          <img ref="controllerContainer" alt="Controller" src="../../assets/controller.png"
             class="animate-float animate-thunderPulse z-20 relative w-full h-auto max-w-xl object-contain transform hover:scale-105 transition-transform duration-500"
             style="filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.4)) drop-shadow(0 0 40px rgba(251, 191, 36, 0.2))">
         </div>
