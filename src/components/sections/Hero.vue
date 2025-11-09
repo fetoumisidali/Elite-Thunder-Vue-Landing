@@ -47,7 +47,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="min-h-screen py-20 flex items-center">
+  <section class="min-h-screen py-20 flex items-center overflow-hidden">
     <ThunderBolt v-for="(bolt, index) in thunderBolts" :key="index" :delay="bolt.delay" :duration="bolt.duration"
       :start-x="bolt.startX" :start-y="bolt.startY" :end-x="bolt.endX" :end-y="bolt.endY" :offset-x="controllerPos.x"
       :offset-y="controllerPos.y" />
